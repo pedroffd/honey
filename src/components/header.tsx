@@ -74,7 +74,13 @@ const Header = () => {
               className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
               id="mobile-menu-2"
             >
-              <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              <input
+                type="text"
+                className="bg-white rounded-lg focus:outline-none pl-12 p-2 outline-none w-fit"
+                placeholder="What can we help to find?"
+              />
+
+              {/*       <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                 <li>
                   <a
                     href="#"
@@ -124,7 +130,7 @@ const Header = () => {
                     Contact
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </nav>
