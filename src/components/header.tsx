@@ -1,11 +1,11 @@
-import { MdOutlineShoppingCart } from 'react-icons/md'
+import { MdOutlineShoppingCart, MdSearch } from 'react-icons/md'
 
 const Header = () => {
   return (
     <>
       <header>
         <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+          <div className="flex flex-wrap justify-between items-center max-w-screen-xl">
             <a href="#" className="flex items-center">
               <img
                 src="https://flowbite.com/docs/images/logo.svg"
@@ -74,12 +74,24 @@ const Header = () => {
               className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
               id="mobile-menu-2"
             >
-              <input
-                type="text"
-                className="bg-white rounded-lg focus:outline-none pl-12 p-2 outline-none w-fit"
-                placeholder="What can we help to find?"
-              />
-
+              <label
+                htmlFor="default-search"
+                className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
+              >
+                Search
+              </label>
+              <div className="relative">
+                <input
+                  type="search"
+                  id="default-search"
+                  className="block bg-white rounded-lg focus:outline-none pl-4 p-2 outline-none w-96"
+                  placeholder="What can we help to find?"
+                  required
+                />
+                <div className="flex absolute text-gray-900 inset-y-0 right-4 items-center pl-3 pointer-events-none">
+                  <MdSearch size={20} color="#CBD5E0" />
+                </div>
+              </div>
               {/*       <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                 <li>
                   <a

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/header'
+import { Footer } from '../components/footer'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
           dasfds
           <h1 className="text-3xl font-bold underline">Hello world!</h1>
         </div>
+        <Footer />
       </div>
     </>
   )
