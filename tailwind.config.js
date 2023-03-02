@@ -46,6 +46,9 @@ module.exports = {
           200: '#cac9f3',
           300: '#7D41E1',
         },
+        mainPink: {
+          100: '#fc5d9d',
+        },
         mainBlue: {
           100: '#2DAAFC',
         },

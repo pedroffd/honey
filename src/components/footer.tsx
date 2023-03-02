@@ -22,24 +22,33 @@ const Footer = () => (
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Company
             </h3>
-            <ul>
+            <ul className="pt-4">
               <li className="mb-4">
                 <a
                   href="#"
                   target="_blank"
                   className="text-gray-600 hover:underline dark:text-gray-400"
                 >
-                  Flowbite
+                  About us
                 </a>
               </li>
-              <li>
+              <li className="mb-4">
                 <a
                   href="#"
                   target="_blank"
                   rel="nofollow"
                   className="text-gray-600 hover:underline dark:text-gray-400"
                 >
-                  Tailwind CSS
+                  Policies
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  className="text-gray-600 hover:underline dark:text-gray-400"
+                >
+                  Careers
                 </a>
               </li>
             </ul>
@@ -48,7 +57,7 @@ const Footer = () => (
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Customer Service
             </h3>
-            <ul>
+            <ul className="pt-4">
               <li className="mb-4">
                 <a
                   href="#"
@@ -73,7 +82,7 @@ const Footer = () => (
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Explore
             </h3>
-            <ul>
+            <ul className="pt-4">
               <li className="mb-4">
                 <a
                   href="#"
@@ -94,19 +103,54 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <div className=" divide-y divide-red-400 mr-11 min-w-full ">
+          <div className=" divide-y divide-red-400 mr-11 min-w-full">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Connect with us
             </h3>
-            <ul>
+            <ul className="pt-4">
               <li className="mb-4">
                 <a
                   href="#"
                   target="_blank"
                   className="text-gray-600 hover:underline dark:text-gray-400"
                 >
-                  Privacy Policy
+                  Subscribe to our newsletter and get 10% off your first
+                  purchase!)
                 </a>
+              </li>
+              <li>
+                <form action="">
+                  <div className="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
+                    <div
+                      className="relative md:mb-6"
+                      data-te-input-wrapper-init
+                    >
+                      <input
+                        type="text"
+                        className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-secondary-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="exampleFormControlInput1"
+                        placeholder="Email address"
+                      />
+                      <label
+                        htmlFor="exampleFormControlInput1"
+                        className="  bg-white pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-secondary-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-blue-600 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-secondary-200 dark:peer-focus:text-secondary-200"
+                      >
+                        Email address
+                      </label>
+                    </div>
+
+                    <div className="mb-6 md:mr-auto">
+                      <button
+                        type="button"
+                        className="bg-mainPink-100 inline-block rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
+                      >
+                        Sign up
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </li>
               <li>
                 <a
