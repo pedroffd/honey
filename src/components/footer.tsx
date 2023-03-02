@@ -1,23 +1,26 @@
 const Footer = () => (
-  <div className="max-w-2xl mx-auto">
+  <div className="w-full">
     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
-      <div className="md:flex md:justify-between">
-        <div className="mb-6 md:mb-0">
-          <a href="#" target="_blank" className="flex items-center">
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="mr-4 h-10"
-              alt="FlowBite Logo"
-            />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
-          </a>
-        </div>
-        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-          <div>
+      <div
+        className="mb-6 md:mb-6 max-w-screen-lg mx-auto px-6"
+        id="companyName"
+      >
+        <a href="#" target="_blank" className="flex items-center">
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            className="mr-2 h-10"
+            alt="FlowBite Logo"
+          />
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+            Honey
+          </span>
+        </a>
+      </div>
+      <div className="md:flex md:justify-between max-w-screen-lg mx-auto px-6">
+        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
+          <div className=" divide-y divide-red-400 mr-11 min-w-full ">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Resources
+              Company
             </h3>
             <ul>
               <li className="mb-4">
@@ -41,9 +44,9 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <div>
+          <div className="divide-y divide-red-400 mr-11 min-w-full ">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Follow us
+              Customer Service
             </h3>
             <ul>
               <li className="mb-4">
@@ -66,9 +69,34 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <div>
+          <div className=" divide-y divide-red-400 mr-11 min-w-full ">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Legal
+              Explore
+            </h3>
+            <ul>
+              <li className="mb-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  className="text-gray-600 hover:underline dark:text-gray-400"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  className="text-gray-600 hover:underline dark:text-gray-400"
+                >
+                  Terms &amp; Conditions
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className=" divide-y divide-red-400 mr-11 min-w-full ">
+            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Connect with us
             </h3>
             <ul>
               <li className="mb-4">
