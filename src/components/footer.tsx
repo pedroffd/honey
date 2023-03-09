@@ -2,7 +2,7 @@ const Footer = () => (
   <div className="w-full">
     <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
       <div
-        className="mb-6 md:mb-6 max-w-screen-lg mx-auto px-6"
+        className="mb-2 md:mb-6 mx-auto md:flex md:justify-between max-w-screen-xl mx-auto sm:px-6 lg:px-8"
         id="companyName"
       >
         <a href="#" target="_blank" className="flex items-center">
@@ -16,12 +16,13 @@ const Footer = () => (
           </span>
         </a>
       </div>
-      <div className="md:flex md:justify-between max-w-screen-lg">
-        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
-          <div className=" divide-y divide-red-400 mr-11 min-w-full ">
+      <div className="md:flex md:justify-between max-w-screen-xl mx-auto sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="divide-y divide-red-400 pr-10 w-38">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Company
             </h3>
+
             <ul className="pt-4">
               <li className="mb-4">
                 <a
@@ -32,6 +33,7 @@ const Footer = () => (
                   About us
                 </a>
               </li>
+
               <li className="mb-4">
                 <a
                   href="#"
@@ -53,7 +55,7 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <div className="divide-y divide-red-400 mr-11 min-w-full ">
+          <div className="divide-y divide-red-400 mr-11 w-38">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Customer Service
             </h3>
@@ -78,7 +80,7 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <div className=" divide-y divide-red-400 mr-11 min-w-full ">
+          <div className=" divide-y divide-red-400 mr-11 w-38">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Explore
             </h3>
@@ -103,10 +105,11 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <div className=" divide-y divide-red-400 mr-11 min-w-full">
+          <div className="divide-y divide-red-400 mr-11 w-72 pr-10">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Connect with us
             </h3>
+
             <ul className="pt-4">
               <li className="mb-4">
                 <a
@@ -133,7 +136,7 @@ const Footer = () => (
                       />
                       <label
                         htmlFor="exampleFormControlInput1"
-                        className="w-44 pl-2.5 pt-2 pb-2 rounded-full bg-white pointer-events-none absolute top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-blue-600 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-secondary-200 dark:peer-focus:text-secondary-200"
+                        className="w-72 pl-2.5 pt-2 pb-2 rounded-full bg-white pointer-events-none absolute top-0 mb-0 max-w-[100%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-blue-600 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-secondary-200 dark:peer-focus:text-secondary-200"
                       >
                         Email address
                       </label>
@@ -166,7 +169,7 @@ const Footer = () => (
         </div>
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div className="sm:flex sm:items-center sm:justify-between">
+      <div className="sm:flex sm:items-center sm:justify-between max-w-screen-xl mx-auto lg:px-8">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2022{' '}
           <a
