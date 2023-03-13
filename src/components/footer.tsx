@@ -1,6 +1,6 @@
 const Footer = () => (
   <div className="w-full">
-    <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
+    <footer className="p-4 bg-white sm:p-6 dark:bg-darkPurple">
       <div
         className="mb-2 md:mb-6 mx-auto md:flex md:justify-between max-w-screen-xl mx-auto sm:px-6 lg:px-8"
         id="companyName"
@@ -105,7 +105,7 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <div className="divide-y divide-red-400 mr-11 w-72 pr-10">
+          <div className="divide-y divide-red-400 mr-11 w-72 lg:pr-10">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
               Connect with us
             </h3>
@@ -181,7 +181,7 @@ const Footer = () => (
           </a>
           . All Rights Reserved.
         </span>
-        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0  lg:mr-8 md:mr-20">
           <a
             href="#"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"

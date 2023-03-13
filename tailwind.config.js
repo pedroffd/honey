@@ -19,6 +19,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        backgroundImage: {
+          'heroMain': "url('../public/images/hero.jpg')",
+          'heroSecond'
+        },
         primary: {
           100: '#E6F6FE',
           200: '#C0EAFC',
@@ -30,6 +34,7 @@ module.exports = {
           800: '#014C6E',
           900: '#013349',
         },
+        darkPurple: '#262044',
         gray: {
           100: '#f7fafc',
           200: '#edf2f7',
