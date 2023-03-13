@@ -1,51 +1,65 @@
 const Footer = () => (
-  <div className="max-w-2xl mx-auto">
-    <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
-      <div className="md:flex md:justify-between">
-        <div className="mb-6 md:mb-0">
-          <a href="#" target="_blank" className="flex items-center">
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="mr-4 h-10"
-              alt="FlowBite Logo"
-            />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
-          </a>
-        </div>
-        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-          <div>
+  <div className="w-full">
+    <footer className="p-4 bg-white sm:p-6 dark:bg-darkPurple">
+      <div
+        className="mb-2 md:mb-6 mx-auto md:flex md:justify-between max-w-screen-xl mx-auto sm:px-6 lg:px-8"
+        id="companyName"
+      >
+        <a href="#" target="_blank" className="flex items-center">
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            className="mr-2 h-10"
+            alt="FlowBite Logo"
+          />
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+            Honey
+          </span>
+        </a>
+      </div>
+      <div className="md:flex md:justify-between max-w-screen-xl mx-auto sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="divide-y divide-red-400 pr-10 w-38">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Resources
+              Company
             </h3>
-            <ul>
+
+            <ul className="pt-4">
               <li className="mb-4">
                 <a
                   href="#"
                   target="_blank"
                   className="text-gray-600 hover:underline dark:text-gray-400"
                 >
-                  Flowbite
+                  About us
                 </a>
               </li>
-              <li>
+
+              <li className="mb-4">
                 <a
                   href="#"
                   target="_blank"
                   rel="nofollow"
                   className="text-gray-600 hover:underline dark:text-gray-400"
                 >
-                  Tailwind CSS
+                  Policies
+                </a>
+              </li>
+              <li className="mb-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  className="text-gray-600 hover:underline dark:text-gray-400"
+                >
+                  Careers
                 </a>
               </li>
             </ul>
           </div>
-          <div>
+          <div className="divide-y divide-red-400 mr-11 w-38">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Follow us
+              Customer Service
             </h3>
-            <ul>
+            <ul className="pt-4">
               <li className="mb-4">
                 <a
                   href="#"
@@ -66,11 +80,11 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-          <div>
+          <div className=" divide-y divide-red-400 mr-11 w-38">
             <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Legal
+              Explore
             </h3>
-            <ul>
+            <ul className="pt-4">
               <li className="mb-4">
                 <a
                   href="#"
@@ -91,10 +105,71 @@ const Footer = () => (
               </li>
             </ul>
           </div>
+          <div className="divide-y divide-red-400 mr-11 w-72 lg:pr-10">
+            <h3 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              Connect with us
+            </h3>
+
+            <ul className="pt-4">
+              <li className="mb-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  className="text-gray-600 hover:underline dark:text-gray-400"
+                >
+                  Subscribe to our newsletter and get 10% off your first
+                  purchase!)
+                </a>
+              </li>
+              <li>
+                <form action="">
+                  <div className="grid-cols-2 grid md:grid-cols-2">
+                    <div
+                      className="relative md:mb-6"
+                      data-te-input-wrapper-init
+                    >
+                      <input
+                        type="text"
+                        className="peer block min-h-[auto] rounded border-0 bg-transparent py-[0.32rem] px-3 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:placeholder:text-secondary-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="exampleFormControlInput1"
+                        placeholder="Email address"
+                      />
+                      <label
+                        htmlFor="exampleFormControlInput1"
+                        className="w-72 pl-2.5 pt-2 pb-2 rounded-full bg-white pointer-events-none absolute top-0 mb-0 max-w-[100%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-gray-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-blue-600 peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-secondary-200 dark:peer-focus:text-secondary-200"
+                      >
+                        Email address
+                      </label>
+                    </div>
+
+                    <div className="mb-6 md:mr-auto">
+                      <button
+                        type="button"
+                        className="bg-mainPink-100 inline-block rounded-full ml-3 bg-primary pl-2 pr-2 pt-2.5 pb-2 h-10 w-24 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                        data-te-ripple-init
+                        data-te-ripple-color="light"
+                      >
+                        Sign up
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  className="text-gray-600 hover:underline dark:text-gray-400"
+                >
+                  Terms &amp; Conditions
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-      <div className="sm:flex sm:items-center sm:justify-between">
+      <div className="sm:flex sm:items-center sm:justify-between max-w-screen-xl mx-auto lg:px-8">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2022{' '}
           <a
@@ -106,7 +181,7 @@ const Footer = () => (
           </a>
           . All Rights Reserved.
         </span>
-        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0  lg:mr-8 md:mr-20">
           <a
             href="#"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"

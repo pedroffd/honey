@@ -17,8 +17,8 @@ export default function Home() {
           dasfds
           <h1 className="text-3xl font-bold underline">Hello world!</h1>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }
