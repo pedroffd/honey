@@ -19,10 +19,6 @@ module.exports = {
     },
     extend: {
       colors: {
-        backgroundImage: {
-          'heroMain': "url('../public/images/hero.jpg')",
-          'heroSecond'
-        },
         primary: {
           100: '#E6F6FE',
           200: '#C0EAFC',
@@ -63,6 +59,10 @@ module.exports = {
       },
       lineHeight: {
         hero: '4.5rem',
+      },
+      backgroundImage: {
+        heroMain: "url('../public/images/hero.jpg')",
+        heroSecond: "url('../public/images/hero2.jpg')",
       },
     },
   },
