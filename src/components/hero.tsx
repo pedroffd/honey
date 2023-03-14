@@ -1,11 +1,8 @@
-const Footer = () => (
+const Hero = () => (
   <div className="w-full">
     <div className="max-w-screen-xl p-5 mx-auto dark:bg-gray-800 dark:text-gray-100">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 md:gap-0 lg:grid-rows-2">
-        <div
-          className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 md:col-span-2 lg:row-span-2 lg:h-full group dark:bg-gray-500"
-          style="background-image: url(https://source.unsplash.com/random/245x320);"
-        >
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:grid-rows-2">
+        <div className="bg-heroMain relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 md:col-span-2 lg:row-span-2 lg:h-full group dark:bg-gray-500">
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
           <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
             <a
@@ -32,11 +29,8 @@ const Footer = () => (
             </a>
           </h2>
         </div>
-        <div
-          className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500"
-          style='background-image: url("https://source.unsplash.com/random/240x320");'
-        >
-          <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+        <div className="bg-lightPink relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500">
+          <div className="absolute top-0 bottom-0 left-0 right-0 bg-lightPink dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
           <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
             <a
               rel="noopener noreferrer"
@@ -63,10 +57,7 @@ const Footer = () => (
             </a>
           </h2>
         </div>
-        <div
-          className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500"
-          style='background-image: url("https://source.unsplash.com/random/241x320");'
-        >
+        {/*  <div className="bg-heroMain relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500">
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
           <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
             <a
@@ -92,11 +83,8 @@ const Footer = () => (
               Inventore reiciendis aliquam excepturi
             </a>
           </h2>
-        </div>
-        <div
-          className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500"
-          style='background-image: url("https://source.unsplash.com/random/242x320");'
-        >
+        </div> */}
+        {/*    <div className="bg-heroMain relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500">
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
           <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
             <a
@@ -122,11 +110,8 @@ const Footer = () => (
               Officiis mollitia dignissimos commodi optio vero animi
             </a>
           </h2>
-        </div>
-        <div
-          className="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500"
-          style='background-image: url("https://source.unsplash.com/random/243x320");'
-        >
+        </div> */}
+        <div className="bg-heroSecond relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500">
           <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
           <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
             <a
@@ -158,4 +143,4 @@ const Footer = () => (
   </div>
 )
 
-export { Footer }
+export { Hero }
