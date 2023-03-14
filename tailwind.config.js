@@ -64,6 +64,10 @@ module.exports = {
       lineHeight: {
         hero: '4.5rem',
       },
+      backgroundImage: {
+        heroMain: "url('../public/images/hero.jpg')",
+        heroSecond: "url('../public/images/hero2.jpg')",
+      },
     },
   },
   variants: {},
