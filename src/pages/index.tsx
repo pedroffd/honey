@@ -3,6 +3,7 @@ import Header from '../components/header'
 import { Footer } from '../components/footer'
 import { Hero } from '../components/hero'
 import { Categories } from '../components/categories'
+import { Cattest2 } from '../components/test2'
 export default function Home() {
   return (
     <>
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
-      <Categories />
+      <Cattest2 />
       <Footer />
     </>
   )
