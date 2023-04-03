@@ -15,14 +15,17 @@ const Categories = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap text-center md:text-center w-full px-8 md:px-4 lg:px-8 items-center justify-center">
-          <CategoryIcon color="#fc5d9d" width="80" height="80" />
-          <CategoryIcon color="#fc5d9d" width="80" height="80" />
-          <CategoryIcon color="#fc5d9d" width="80" height="80" />
-          <CategoryIcon color="#fc5d9d" width="80" height="80" />
-          <CategoryIcon color="#fc5d9d" width="80" height="80" />
-          <CategoryIcon color="#fc5d9d" width="80" height="80" />
-          <CategoryIcon color="#fc5d9d" width="80" height="80" />
+        <div
+          className="flex flex-wrap text-center md:text-center md:px-48 lg:px-8
+        justify-center"
+        >
+          <CategoryIcon color="#fc5d9d" width="50" height="50" />
+          <CategoryIcon color="#fc5d9d" width="50" height="50" />
+          <CategoryIcon color="#fc5d9d" width="50" height="50" />
+          <CategoryIcon color="#fc5d9d" width="50" height="50" />
+          <CategoryIcon color="#fc5d9d" width="50" height="50" />
+          <CategoryIcon color="#fc5d9d" width="50" height="50" />
+          <CategoryIcon color="#fc5d9d" width="50" height="50" />
         </div>
       </div>
     </section>
