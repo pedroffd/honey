@@ -10,7 +10,7 @@ const Categories = () => {
             <p className="text-sm "></p>
           </div>
           <div className="flex flex-col w-2/6 items-center">
-            <h3 className="text-xl md:text-xl my-4 leading-relaxed md:leading-snug fixed top-60 pt-2">
+            <h3 className="text-xl md:text-xl my-4 leading-relaxed md:leading-snug sticky pt-1">
               Categories
             </h3>
           </div>
@@ -19,7 +19,7 @@ const Categories = () => {
             <p className="text-sm "></p>
           </div>
         </div>
-        <p className="font-sans text-sm md:text-lg mb-2 justify-center text-center mt-4">
+        <p className="font-sans text-sm md:text-lg mb-2 justify-center text-center ">
           Love. Shop. Discover.
         </p>
         <div className="flex flex-wrap text-center md:text-center md:px-48 lg:px-8 justify-center">

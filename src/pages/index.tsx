@@ -3,6 +3,7 @@ import Header from '../components/header'
 import { Footer } from '../components/footer'
 import { Hero } from '../components/hero'
 import { Categories } from '../components/categories'
+import { Cards } from '../components/cards'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Categories />
+      <Cards />
       <Footer />
     </>
   )

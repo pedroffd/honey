@@ -10,6 +10,7 @@ const nextConfig = {
       'cdn.cloudflare.steamstatic.com',
       'i.ytimg.com',
       'verdict.co.uk',
+      '/public/image/',
     ],
   },
   webpack5: true,
