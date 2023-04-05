@@ -5,7 +5,7 @@ import { Rating } from './rating_stars'
 
 const ProductCard = () => {
   return (
-    <div className="flex flex-wrap rounded-md w-52 dark:text-gray-100 mr-3 shadow-lg shadow-cyan-200/30 bg-red-300">
+    <div className="flex flex-wrap rounded-md w-52 dark:text-gray-100 mr-14 mt-2">
       <div className="flex items-center justify-between p-3">
         <button title="Open options" type="button">
           <svg
@@ -25,7 +25,7 @@ const ProductCard = () => {
         height={300}
         className="object-cover object-center w-52 h-52 dark:bg-gray-500"
       />
-      <p className="pr-10 pl-2 pt-1 text-gray-800 ">
+      <p className="pl-3 pt-1 text-gray-800 ">
         System JO CLASSIC HYBRID, Lubricant
       </p>
       <div className="p-2">
