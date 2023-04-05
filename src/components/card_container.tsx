@@ -3,7 +3,7 @@ import { ProductCard } from './product_card'
 
 const CardContainer = () => {
   return (
-    <section className="md:flex-row pl-8 pr-8 pt-4 pb-4 mx-auto">
+    <section className="max-w-6xl pl-8 pt-4 pb-4 mx-auto">
       <SectionTitle />
       <div className="flex flex-wrap md:px-48 lg:px-8 justify-center">
         <ProductCard />

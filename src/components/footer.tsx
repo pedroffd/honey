@@ -1,8 +1,10 @@
+//
+
 const Footer = () => (
-  <div className="w-full">
-    <footer className="p-4 bg-white sm:p-6 dark:bg-darkPurple">
+  <div className="max-w-6xl pl-8 pr-8 pt-4 pb-4 mx-auto bg-white sm:p-6 dark:bg-darkPurple">
+    <footer className="p-4">
       <div
-        className="mb-2 md:mb-6 mx-auto md:flex md:justify-between max-w-screen-xl mx-auto sm:px-6 lg:px-8"
+        className=" mb-2 md:mb-6 mx-auto md:flex md:justify-between max-w-screen-xl sm:px-6 lg:px-8"
         id="companyName"
       >
         <a href="#" target="_blank" className="flex items-center">
