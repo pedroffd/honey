@@ -12,7 +12,7 @@ const CategoryIcon: React.FC<ICategoryIconProps> = ({
   height,
 }) => {
   return (
-    <div className="lg:my-4 w-1/2 md:w-1/3 lg:w-24 overflow-hiddden mr-10">
+    <div className="lg:my-4 w-1/2 md:w-1/3 lg:w-24 overflow-hiddden mr-8 ml-8">
       <div className="h-20 w-20 border-4 border-lightPink rounded-full transition duration-500 hover:border-white mx-auto pl-3 pt-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
