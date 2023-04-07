@@ -5,7 +5,7 @@ import { Rating } from './rating_stars'
 
 const ProductCard = () => {
   return (
-    <div className="flex flex-wrap rounded-md w-52 dark:text-gray-100 mr-12 mt-2">
+    <div className="flex flex-wrap rounded-md w-52 dark:text-gray-100 mr-6 ml-8 mt-2">
       <div className="flex items-center justify-between p-3">
         <button title="Open options" type="button">
           <svg

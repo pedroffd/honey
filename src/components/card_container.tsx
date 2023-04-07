@@ -3,9 +3,9 @@ import { ProductCard } from './product_card'
 
 const CardContainer = () => {
   return (
-    <section className="max-w-6xl pl-8 pt-4 pb-4 mx-auto">
+    <section className="max-w-6xl pl-4 pr-4 pt-4 pb-4 mx-auto">
       <SectionTitle />
-      <div className="flex flex-wrap md:px-48 lg:px-8 justify-center">
+      <div className="flex flex-wrap justify-center">
         <ProductCard />
         <ProductCard />
         <ProductCard />
