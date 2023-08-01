@@ -1,6 +1,6 @@
 const Hero = () => (
     <div className="w-full">
-        <div className="max-w-6xl pl-8 pr-8 pt-4 pb-4 mx-auto">
+ <div className="max-w-screen-xl pl-8 pr-8 pt-4 pb-4 mx-auto">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap- lg:grid-rows-2 h-96">
                 <div className="bg-heroMain relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer md:col-span-2 lg:row-span-2  group dark:bg-gray-500">
                     <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
