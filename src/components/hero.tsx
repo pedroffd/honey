@@ -17,7 +17,7 @@ const HeroMobile: React.FC<HeroProps> = ({ highlightProducts }) => {
     return (
         <div className="w-full" id="Hero">
             <div className="max-w-screen-xl pl-8 pr-8 pt-4 pb-4 mx-auto">
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap- lg:grid-rows-2 md:h-96">
+                <div className="grid grid-cols-1 gap-4  lg:grid-cols-3 md:gap-2 lg:grid-rows-2 ">
                     <Carousel
                         cols={3}
                         rows={1}
@@ -70,7 +70,7 @@ const HeroMobile: React.FC<HeroProps> = ({ highlightProducts }) => {
 
 const HeroWeb: React.FC<HeroProps> = ({ highlightProducts }) => {
     return (
-        <div className="w-full">
+        <div className="w-full bg-purple-500">
             <div className="max-w-screen-xl pl-8 pr-8 pt-4 pb-4 mx-auto">
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap- lg:grid-rows-2 h-96">
                     {highlightProducts.map((product, index) => (
@@ -121,7 +121,6 @@ export { HeroWeb }
 
 const Hero = () => {
     const isMobile = useIsMobile()
-    console.log('useIsMobile: ', useIsMobile)
     return isMobile ? (
         <HeroMobile highlightProducts={highlightProducts} />
     ) : (
