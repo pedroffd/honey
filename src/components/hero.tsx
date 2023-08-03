@@ -121,7 +121,7 @@ export { HeroWeb }
 
 const Hero = () => {
     const isMobile = useIsMobile()
-
+    console.log('useIsMobile: ', useIsMobile)
     return isMobile ? (
         <HeroMobile highlightProducts={highlightProducts} />
     ) : (
