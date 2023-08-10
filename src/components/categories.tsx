@@ -14,7 +14,6 @@ interface ICategoriesProps {
 }
 
 const Categories: React.FC<ICategoriesProps> = ({ categories }) => {
-    console.log('categoriesData: ', categoriesData)
     return (
         <section className="flex-row max-w-6xl p-2 mx-auto">
             <div className="py-4 text-black">
