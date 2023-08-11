@@ -1,6 +1,8 @@
 import { IHighlightProduct } from './components/hero';
-import vibrator from '../public/images/category_icons/vibrator.svg'
+//import cardImage from '../public/images/cardImage.jpeg'
+import sextoy from '../public/images/sextoy.jpeg'
 import { ICategory } from './components/categories'
+import { IProduct } from './components/product_card'
 
 export const highlightProducts: IHighlightProduct[] = [
   {
@@ -48,3 +50,19 @@ export const categoriesData: ICategory[] = [
 ];
 
 
+export const productsData: IProduct[] = [
+  {
+    productImage: sextoy,
+    imageSize: 300,
+    produtName: "System JO CLASSIC HYBRID",
+    productCategory: "Lubricant",
+    price: 103.03,
+  },
+  {
+    productImage: sextoy,
+    imageSize: 300,
+    produtName: "System JO CLASSIC HYBRID",
+    productCategory: "Lubricant",
+    price: 103.03,
+  },
+]

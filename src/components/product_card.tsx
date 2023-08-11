@@ -1,9 +1,19 @@
-import Image from 'next/image'
-import cardImage from '../../public/images/sextoy.jpeg'
+import Image, { StaticImageData } from 'next/image'
 import { MdOutlineShoppingCart } from 'react-icons/md'
 import { Rating } from './rating_stars'
+export interface IProduct {
+    imageSize: number
+    produtName: string
+    productCategory: string
+    price: number
+    productImage: string | StaticImageData
+}
+interface IProductsProps {
+    product: IProduct
+}
 
-const ProductCard = () => {
+const ProductCard: React.FC<IProductsProps> = ({ product }) => {
+    console.log('product: ', product)
     return (
         <div className="flex flex-wrap rounded-md w-52 dark:text-gray-100 mr-6 ml-8 mt-2">
             <div className="flex items-center justify-between p-3">
@@ -19,14 +29,14 @@ const ProductCard = () => {
             </div>
             <Image
                 alt="logo"
-                src={cardImage}
+                src={product.productImage}
                 quality={100}
-                width={300}
-                height={300}
+                width={product.imageSize}
+                height={product.imageSize}
                 className="object-cover object-center w-52 h-52 dark:bg-gray-500"
             />
             <p className="pl-3 pt-1 text-gray-800 ">
-                System JO CLASSIC HYBRID, Lubricant
+                {product.produtName}, {product.productCategory}
             </p>
             <div className="p-2">
                 <div className="flex items-center">
@@ -37,7 +47,7 @@ const ProductCard = () => {
                 </div>
                 <div className="space-y-2 flex items-center pt-3 pb-1">
                     <span className="text-base dark:text-gray-800 font-semibold pt-2">
-                        $103.00
+                        ${product.price}
                     </span>
                     <button
                         type="button"
