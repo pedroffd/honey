@@ -1,7 +1,7 @@
 import { IHighlightProduct } from './components/hero';
 //import cardImage from '../public/images/cardImage.jpeg'
 import sextoy from '../public/images/sextoy.jpeg'
-import { ICategory } from './components/categories'
+import { ICategoryCard } from './components/category_card'
 import { IProduct } from './components/product_card'
 
 export const highlightProducts: IHighlightProduct[] = [
@@ -31,7 +31,7 @@ export const highlightProducts: IHighlightProduct[] = [
 
 
 
-export const categoriesData: ICategory[] = [
+export const categoriesData: ICategoryCard[] = [
   {
     width: 50,
     height: 50,
