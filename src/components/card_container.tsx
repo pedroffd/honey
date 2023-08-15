@@ -8,7 +8,11 @@ const CardContainer = () => {
             <SectionTitle title="Classics" subtitle="Love. Shop. Discover." />
             <div className="flex flex-wrap justify-center">
                 {productsData.map((product, index) => (
-                    <ProductCard key={index} product={product} />
+                    <ProductCard
+                        key={index}
+                        product={product}
+                        variant="withSteps"
+                    />
                 ))}
             </div>
         </section>

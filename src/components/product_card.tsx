@@ -1,6 +1,8 @@
 import Image, { StaticImageData } from 'next/image'
 import { MdOutlineShoppingCart } from 'react-icons/md'
 import { Rating } from './rating_stars'
+import { cn } from '../lib/utils'
+import { cva } from 'class-variance-authority'
 export interface IProduct {
     imageSize: number
     produtName: string
@@ -8,13 +10,37 @@ export interface IProduct {
     price: number
     productImage: string | StaticImageData
 }
+
 interface IProductsProps {
     product: IProduct
+    variant?: 'default' | 'withHover' | 'withSteps'
 }
 
-const ProductCard: React.FC<IProductsProps> = ({ product }) => {
+const productCardVariants = cva(
+    // Define your default styles here
+    'flex flex-wrap rounded-md w-52 dark:text-gray-100 mr-6 ml-8 mt-2',
+    {
+        variants: {
+            variant: {
+                default: '', // Default styles here
+                withSteps:
+                    'shadow-[0_0_7px_0_rgba(78,78,78,0.23)] min-w-[180px] md:w-[150px] lg:w-[210px] xl:w-[250px]',
+                withHover:
+                    'border-solid border-2 border-slate-100 bg-slate-50 hover:bg-slate-100', // Variant styles here
+            },
+        },
+        defaultVariants: {
+            variant: 'default',
+        },
+    },
+)
+
+const ProductCard: React.FC<IProductsProps> = ({
+    product,
+    variant = 'default',
+}) => {
     return (
-        <div className="flex flex-wrap rounded-md w-52 dark:text-gray-100 mr-6 ml-8 mt-2">
+        <div className={cn(productCardVariants({ variant }))}>
             <div className="flex items-center justify-between p-3">
                 <button title="Open options" type="button">
                     <svg
