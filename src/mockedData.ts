@@ -29,8 +29,6 @@ export const highlightProducts: IHighlightProduct[] = [
   // Add more highlight products here
 ];
 
-
-
 export const categoriesData: ICategoryCard[] = [
   {
     width: 50,
@@ -48,7 +46,6 @@ export const categoriesData: ICategoryCard[] = [
   },
   // Add more objects as needed
 ];
-
 
 export const productsData: IProduct[] = [
   {
