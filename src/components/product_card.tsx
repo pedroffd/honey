@@ -20,7 +20,7 @@ interface IProductsProps {
 
 const productCardVariants = cva(
     // Define your default styles here
-    'flex flex-wrap rounded-md w-56 dark:text-gray-100 mr-6 ml-8 mt-2',
+    'flex flex-wrap rounded-md w-56 dark:text-gray-100 mr-6 ml-8 mt-2 justify-center',
     {
         variants: {
             variant: {
@@ -45,7 +45,7 @@ const ProductCard: React.FC<IProductsProps> = ({
         <div className={cn(productCardVariants({ variant }))}>
             <div className="flex items-center justify-between relative">
                 <button title="Open options" type="button">
-                    <div className="w-8 h-8 p-1 absolute top-0 left-48 text-mainPink-100">
+                    <div className="w-8 h-8 p-1 absolute top-0 left-44 text-mainPink-100">
                         <HeartIcon />
                     </div>
                 </button>
@@ -56,16 +56,14 @@ const ProductCard: React.FC<IProductsProps> = ({
                 quality={100}
                 width={product.imageSize}
                 height={product.imageSize}
-                className="object-cover object-center w-52 h-52 dark:bg-gray-500"
+                className="object-cover object-center w-52 h-52 dark:bg-gray-500 mt-2"
             />
-            <p className="pl-3 pt-1 text-gray-800 ">
+            <p className="pl-3 pt-1 text-gray-800">
                 {product.produtName}, {product.productCategory}
             </p>
-            <div className="p-2">
-                <div className="flex items-center">
-                    <div className="flex items-center pr-2 pl-1 space-x-2 dark:text-gray-800">
-                        Satisfyer
-                    </div>
+            <div className="py-2">
+                <div className="flex items-center space-x-4">
+                    <p className="pr-2 pl-1 dark:text-gray-800">Satisfyer</p>
                     <Rating />
                 </div>
                 <div className="space-y-2 flex items-center pt-3 pb-1">
