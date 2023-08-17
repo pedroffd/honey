@@ -3,7 +3,7 @@ import { MdOutlineShoppingCart } from 'react-icons/md'
 import { Rating } from './rating_stars'
 import { cn } from '../lib/utils'
 import { cva } from 'class-variance-authority'
-import { HeartIcon } from '../assets/icons/icon-list' // Import the specific icon you want to use
+import HeartIcon from '../assets/icons/icon-list' // Import the specific icon you want to use
 
 export interface IProduct {
     imageSize: number
@@ -20,7 +20,7 @@ interface IProductsProps {
 
 const productCardVariants = cva(
     // Define your default styles here
-    'flex flex-wrap rounded-md w-52 dark:text-gray-100 mr-6 ml-8 mt-2',
+    'flex flex-wrap rounded-md w-56 dark:text-gray-100 mr-6 ml-8 mt-2',
     {
         variants: {
             variant: {
@@ -43,17 +43,10 @@ const ProductCard: React.FC<IProductsProps> = ({
 }) => {
     return (
         <div className={cn(productCardVariants({ variant }))}>
-            <div className="flex items-center justify-between p-3">
+            <div className="flex items-center justify-between relative">
                 <button title="Open options" type="button">
-                    <div className="w-12 h-12">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            className="ml-36"
-                            fill="#FF69B4"
-                        >
-                            <path d={HeartIcon} />
-                        </svg>
+                    <div className="w-8 h-8 p-1 absolute top-0 left-48 text-mainPink-100">
+                        <HeartIcon />
                     </div>
                 </button>
             </div>
