@@ -1,18 +1,15 @@
-interface ICategoryIconProps {
+export interface ICategoryCard {
     color?: string
-    width?: string
-    height?: string
+    width?: number
+    height?: number
     iconName?: string
     svg: string // Add the svg prop
 }
-
-const CategoryIcon: React.FC<ICategoryIconProps> = ({
-    color,
-    width,
-    height,
-    iconName,
-    svg, // Get the svg prop from props
-}) => {
+interface ICategoriesProps {
+    category: ICategoryCard
+}
+const CategoryCard: React.FC<ICategoriesProps> = ({ category }) => {
+    const { color, width, height, iconName, svg } = category
     return (
         <div className="lg:my-4 w-1/2 md:w-1/3 lg:w-24 overflow-hiddden mr-8 ml-8 pb-2">
             <div className="h-20 w-20 border-4 bg-blu border-lightPink rounded-full transition duration-500 hover:border-white mx-auto pl-3 pt-2">
@@ -33,10 +30,4 @@ const CategoryIcon: React.FC<ICategoryIconProps> = ({
     )
 }
 
-CategoryIcon.defaultProps = {
-    color: '#fc5d9d',
-    width: '80',
-    height: '80',
-}
-
-export default CategoryIcon
+export default CategoryCard

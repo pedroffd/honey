@@ -1,6 +1,10 @@
 import Image, { StaticImageData } from 'next/image'
 import { MdOutlineShoppingCart } from 'react-icons/md'
 import { Rating } from './rating_stars'
+import { cn } from '../lib/utils'
+import { cva } from 'class-variance-authority'
+import HeartIcon from '../assets/icons/icon-list' // Import the specific icon you want to use
+
 export interface IProduct {
     imageSize: number
     produtName: string
@@ -8,23 +12,42 @@ export interface IProduct {
     price: number
     productImage: string | StaticImageData
 }
+
 interface IProductsProps {
     product: IProduct
+    variant?: 'default' | 'withHover' | 'withSteps'
 }
 
-const ProductCard: React.FC<IProductsProps> = ({ product }) => {
-    console.log('product: ', product)
+const productCardVariants = cva(
+    // Define your default styles here
+    'flex flex-wrap rounded-md w-56 dark:text-gray-100 mr-6 ml-8 mt-2',
+    {
+        variants: {
+            variant: {
+                default: '', // Default styles here
+                withSteps:
+                    'shadow-[0_0_7px_0_rgba(78,78,78,0.23)] min-w-[180px] md:w-[150px] lg:w-[210px] xl:w-[250px]',
+                withHover:
+                    'border-solid border-2 border-slate-100 bg-slate-50 hover:bg-slate-100', // Variant styles here
+            },
+        },
+        defaultVariants: {
+            variant: 'default',
+        },
+    },
+)
+
+const ProductCard: React.FC<IProductsProps> = ({
+    product,
+    variant = 'default',
+}) => {
     return (
-        <div className="flex flex-wrap rounded-md w-52 dark:text-gray-100 mr-6 ml-8 mt-2">
-            <div className="flex items-center justify-between p-3">
+        <div className={cn(productCardVariants({ variant }))}>
+            <div className="flex items-center justify-between relative">
                 <button title="Open options" type="button">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        className="w-5 h-5 fill-mainPink-100 ml-36"
-                    >
-                        <path d="M453.122,79.012a128,128,0,0,0-181.087.068l-15.511,15.7L241.142,79.114l-.1-.1a128,128,0,0,0-181.02,0l-6.91,6.91a128,128,0,0,0,0,181.019L235.485,449.314l20.595,21.578.491-.492.533.533L276.4,450.574,460.032,266.94a128.147,128.147,0,0,0,0-181.019ZM437.4,244.313,256.571,425.146,75.738,244.313a96,96,0,0,1,0-135.764l6.911-6.91a96,96,0,0,1,135.713-.051l38.093,38.787,38.274-38.736a96,96,0,0,1,135.765,0l6.91,6.909A96.11,96.11,0,0,1,437.4,244.313Z"></path>
-                    </svg>
+                    <div className="w-8 h-8 p-1 absolute top-0 left-48 text-mainPink-100">
+                        <HeartIcon />
+                    </div>
                 </button>
             </div>
             <Image
@@ -63,4 +86,4 @@ const ProductCard: React.FC<IProductsProps> = ({ product }) => {
     )
 }
 
-export { ProductCard }
+export { ProductCard, type IProductsProps }

@@ -70,7 +70,7 @@ const HeroMobile: React.FC<HeroProps> = ({ highlightProducts }) => {
 
 const HeroWeb: React.FC<HeroProps> = ({ highlightProducts }) => {
     return (
-        <div className="w-full bg-purple-500">
+        <div className="w-full">
             <div className="max-w-screen-xl pl-8 pr-8 pt-4 pb-4 mx-auto">
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap- lg:grid-rows-2 h-96">
                     {highlightProducts.map((product, index) => (
