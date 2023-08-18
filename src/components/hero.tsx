@@ -1,7 +1,7 @@
 import Carousel from 'better-react-carousel'
 import { useIsMobile } from '../hooks/hooks'
-
 import { highlightProducts } from '../mockedData'
+
 export interface IHighlightProduct {
     topic: string
     date: string
@@ -29,9 +29,13 @@ const HeroMobile: React.FC<HeroProps> = ({ highlightProducts }) => {
                         {highlightProducts.map((product, index) => (
                             <Carousel.Item key={index}>
                                 <div
-                                    className={`bg-${product.bg} h-48 relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer md:col-span-2 lg:row-span-2 group dark:bg-gray-500`}
+                                    className={
+                                        'h-48 relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer md:col-span-2 lg:row-span-2 group'
+                                    }
                                 >
-                                    <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+                                    <div
+                                        className={`absolute top-0 bottom-0 left-0 right-0 dark:via-transparent bg-${product.bg}`}
+                                    ></div>
                                     <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                                         <a
                                             rel="noopener noreferrer"
@@ -76,13 +80,14 @@ const HeroWeb: React.FC<HeroProps> = ({ highlightProducts }) => {
                     {highlightProducts.map((product, index) => (
                         <div
                             key={index}
-                            className={`bg-${
-                                product.bg
-                            } relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer dark:bg-gray-500 group ${
+                            className={`relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer group ${
                                 index === 0 ? 'md:col-span-2 lg:row-span-2' : ''
                             }`}
                         >
-                            <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+                            <div
+                                className={`absolute top-0 bottom-0 left-0 right-0 dark:via-transparent bg-${product.bg}`}
+                            ></div>
+
                             <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                                 <a
                                     rel="noopener noreferrer"
