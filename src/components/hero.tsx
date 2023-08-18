@@ -85,7 +85,10 @@ const HeroWeb: React.FC<HeroProps> = ({ highlightProducts }) => {
                             }`}
                         >
                             <div
-                                className={`absolute top-0 bottom-0 left-0 right-0 dark:via-transparent bg-${product.bg}`}
+                                className={
+                                    'absolute top-0 bottom-0 left-0 right-0 dark:via-transparent ' +
+                                    product.bg
+                                }
                             ></div>
 
                             <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">

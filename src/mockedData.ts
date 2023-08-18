@@ -10,21 +10,21 @@ export const highlightProducts: IHighlightProduct[] = [
     date: '4th Aug',
     title: 'Autem sunt tempora mollitia magnam non voluptates',
     href: 'https://google.com',
-    bg: 'heroMain',
+    bg: 'bg-rose-300',
   },
   {
     topic: 'Art',
     date: '4th Aug',
     title: 'Autem sunt tempora mollitia magnam non voluptates',
     href: 'https://google.com',
-    bg: 'heroSecond',
+    bg: 'bg-fuchsia-300',
   },
   {
     topic: 'Sport',
     date: '4th Aug',
     title: 'Autem sunt tempora mollitia magnam non voluptates',
     href: 'https://google.com',
-    bg: 'lightPink',
+    bg: 'bg-emerald-300',
   },
   // Add more highlight products here
 ];
