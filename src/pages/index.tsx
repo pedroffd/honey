@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <div className="overflow-hidden no-scrollbar overflow-y-hidden">
             <Head>
-                <title>Create Next App</title>
+                <title>Honey ECommerce</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
