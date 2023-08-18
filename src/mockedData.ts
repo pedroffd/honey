@@ -40,7 +40,7 @@ export const categoriesData: ICategoryCard[] = [
   {
     width: 50,
     height: 50,
-    iconName: 'Test',
+    iconName: 'Toys for couples',
     color: '#fc5d9d',
     svg: IconToyBrickMinusOutline
   },

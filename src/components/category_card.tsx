@@ -18,9 +18,7 @@ const CategoryCard: React.FC<ICategoriesProps> = ({ category }) => {
                     <SvgComponent fill={color} width={width} height={height} />
                 </div>
             </div>
-            <p className="text-lg mt-2 md:mt-2">
-                <b>{iconName}</b>
-            </p>
+            <p className="text-lg mt-2 md:mt-2">{iconName}</p>
         </div>
     )
 }
