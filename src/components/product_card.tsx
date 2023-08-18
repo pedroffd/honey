@@ -3,7 +3,7 @@ import { MdOutlineShoppingCart } from 'react-icons/md'
 import { Rating } from './rating_stars'
 import { cn } from '../lib/utils'
 import { cva } from 'class-variance-authority'
-import HeartIcon from '../assets/icons/icon-list' // Import the specific icon you want to use
+import { HeartIcon } from '../assets/icons/icon-list' // Import the specific icon you want to use
 
 export interface IProduct {
     imageSize: number
