@@ -18,7 +18,7 @@ type ProductCardStory = StoryObj<IProductsProps>;
 const productData: IProductsProps = {
   product: {
     imageSize: 200,
-    produtName: 'Sample Product',
+    productName: 'Sample Product',
     productCategory: 'Sample Category',
     price: 99.99,
     productImage: sextoy,

@@ -5,7 +5,10 @@ import { productsData } from '../mockedData'
 const CardContainer = () => {
     return (
         <section className="max-w-6xl pl-4 pr-4 pt-4 pb-4 mx-auto">
-            <SectionTitle title="Classics" subtitle="Love. Shop. Discover." />
+            <SectionTitle
+                title="Customer favs"
+                subtitle="The most beautiful things we know"
+            />
             <div className="flex flex-wrap justify-center">
                 {productsData.map((product, index) => (
                     <ProductCard

@@ -4,6 +4,8 @@ import { Footer } from '../components/footer'
 import { Hero } from '../components/hero'
 import { Categories } from '../components/categories'
 import { CardContainer } from '../components/card_container'
+import { NewProducts } from '../components/new_products'
+
 export default function Home() {
     return (
         <div className="overflow-hidden no-scrollbar overflow-y-hidden">
@@ -15,6 +17,7 @@ export default function Home() {
             <Hero />
             <Categories />
             <CardContainer />
+            <NewProducts />
             <Footer />
         </div>
     )

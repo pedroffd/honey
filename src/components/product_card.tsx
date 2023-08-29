@@ -7,7 +7,7 @@ import { HeartIcon } from '../assets/icons/icon-list' // Import the specific ico
 
 export interface IProduct {
     imageSize: number
-    produtName: string
+    productName: string
     productCategory: string
     price: number
     productImage: string | StaticImageData
@@ -26,7 +26,7 @@ const productCardVariants = cva(
             variant: {
                 default: '', // Default styles here
                 withSteps:
-                    'shadow-[0_0_7px_0_rgba(78,78,78,0.23)] min-w-[180px] md:w-[150px] lg:w-[210px] xl:w-[250px]',
+                    'shadow-[0_0_7px_0_rgba(78,78,78,0.23)] min-w-[180px] lg:w-[210px] xl:w-[250px]',
                 withHover:
                     'border-solid border-2 border-slate-100 bg-slate-50 hover:bg-slate-100', // Variant styles here
             },
@@ -59,7 +59,7 @@ const ProductCard: React.FC<IProductsProps> = ({
                 className="object-cover object-center w-52 h-52 dark:bg-gray-500 mt-2"
             />
             <p className="pl-3 pt-1 text-gray-800">
-                {product.produtName}, {product.productCategory}
+                {product.productName}, {product.productCategory}
             </p>
             <div className="py-2">
                 <div className="flex items-center space-x-4">

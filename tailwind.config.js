@@ -31,6 +31,7 @@ module.exports = {
                     900: '#013349',
                 },
                 darkPurple: '#262044',
+                beige: '#FDEFEE',
                 gray: {
                     100: '#f7fafc',
                     200: '#edf2f7',
