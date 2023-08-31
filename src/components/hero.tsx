@@ -17,7 +17,7 @@ const HeroMobile: React.FC<HeroProps> = ({ highlightProducts }) => {
     return (
         <div className="w-full" id="Hero">
             <div className="max-w-screen-xl pl-8 pr-8 pt-4 pb-4 mx-auto">
-                <div className="grid grid-cols-1 gap-4  lg:grid-cols-3 md:gap-2 lg:grid-rows-2 ">
+                <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 md:gap-2 lg:grid-rows-2 ">
                     <Carousel
                         cols={3}
                         rows={1}

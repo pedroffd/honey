@@ -11,6 +11,7 @@ export interface IProduct {
     productCategory: string
     price: number
     productImage: string | StaticImageData
+    colors: Array<string>
 }
 
 interface IProductsProps {
