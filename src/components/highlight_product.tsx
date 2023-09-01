@@ -14,12 +14,12 @@ interface IProductsProps {
 
 const productCardVariants = cva(
     // Define your default styles here
-    'flex flex-wrap rounded-md  dark:text-gray-100 mr-6 ml-8 mt-2 justify-center min-w-[380px] max-h-80 my-4',
+    'flex flex-wrap rounded-md dark:text-gray-100 mt-2 justify-center min-w-[350px] my-4 w-9/12 mx-auto',
     {
         variants: {
             variant: {
                 default: '', // Default styles here
-                withSteps: 'shadow-[0_0_7px_0_rgba(78,78,78,0.23)]  ',
+                withSteps: 'shadow-[0_0_7px_0_rgba(78,78,78,0.23)] ',
                 withHover:
                     'border-solid border-2 border-slate-100 bg-slate-50 hover:bg-slate-100', // Variant styles here
             },
@@ -41,21 +41,22 @@ const HighlightProduct: React.FC<IProductsProps> = ({
     }
     return (
         <div className={cn(productCardVariants({ variant }))}>
-            <div className="grid grid-cols-2 gap-6 pt-2">
+            <div className="grid grid-cols-2 gap-6">
                 {/* Row 1: Title */}
-                <p className="col-span-2 pl-3 pt-1 text-gray-800 font-semibold">
+                <p className="col-span-2 pl-3 py-2 text-gray-800 font-semibold">
                     {product.productName}
                 </p>
 
                 {/* Row 2: Product Image, Category, Rating, Price, Color */}
-                <div className="col-span-1">
+                <div className="col-span-1 pt-2">
                     <Image
                         alt="logo"
                         src={product.productImage}
-                        quality={100}
+                        quality={85}
                         width={product.imageSize}
                         height={product.imageSize}
-                        className="object-cover object-center w-full h-full dark:bg-gray-500 mt-2 ml-4"
+                        className="w-8/12 h-5/12 mb-2 items-center justify-center mx-auto"
+                        //style={{ objectFit: 'contain' }}
                     />
                 </div>
                 <div className="col-span-1 mx-2">

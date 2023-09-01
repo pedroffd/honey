@@ -13,7 +13,7 @@ const NewProducts = () => {
                 rows={1}
                 gap={12}
                 loop
-                autoplay={4000}
+                //autoplay={4000}
                 hideArrow={false}
             >
                 {productsData.map((product, index) => (
