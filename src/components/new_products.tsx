@@ -5,13 +5,13 @@ import Carousel from 'better-react-carousel'
 
 const NewProducts = () => {
     return (
-        <section className="max-w-6xl pl-4 pr-4 pt-4 pb-4 mx-auto">
+        <section className="max-w-4xl pl-4 pr-4 pt-4 pb-4 mx-auto">
             <SectionTitle title="New products" subtitle="" />
 
             <Carousel
                 cols={1}
                 rows={1}
-                gap={12}
+                gap={8}
                 loop
                 //autoplay={4000}
                 hideArrow={false}
@@ -21,7 +21,7 @@ const NewProducts = () => {
                         <HighlightProduct
                             key={index}
                             product={product}
-                            variant="withSteps"
+                            variant="default"
                         />
                     </Carousel.Item>
                 ))}

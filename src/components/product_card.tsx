@@ -11,7 +11,7 @@ export interface IProduct {
     productCategory: string
     price: number
     productImage: string | StaticImageData
-    colors: Array<string>
+    colors: Array<{ code: string; name: string }>
 }
 
 interface IProductsProps {
@@ -21,13 +21,13 @@ interface IProductsProps {
 
 const productCardVariants = cva(
     // Define your default styles here
-    'flex flex-wrap rounded-md w-56 dark:text-gray-100 mr-6 ml-8 mt-2 justify-center',
+    'flex flex-wrap rounded-md w-56 dark:text-gray-100 mr-6 ml-8 mt-2',
     {
         variants: {
             variant: {
                 default: '', // Default styles here
                 withSteps:
-                    'shadow-[0_0_7px_0_rgba(78,78,78,0.23)] min-w-[180px] lg:w-[210px] xl:w-[250px]',
+                    'shadow-[0_0_7px_0_rgba(78,78,78,0.23)] min-w-[210px] lg:w-[210px] xl:w-[250px]',
                 withHover:
                     'border-solid border-2 border-slate-100 bg-slate-50 hover:bg-slate-100', // Variant styles here
             },
@@ -46,7 +46,7 @@ const ProductCard: React.FC<IProductsProps> = ({
         <div className={cn(productCardVariants({ variant }))}>
             <div className="flex items-center justify-between relative">
                 <button title="Open options" type="button">
-                    <div className="w-8 h-8 p-1 absolute top-0 left-44 text-mainPink-100">
+                    <div className="w-8 h-8 p-1 absolute top-0 left-44 xl:left-52 text-mainPink-100">
                         <HeartIcon />
                     </div>
                 </button>
@@ -57,7 +57,7 @@ const ProductCard: React.FC<IProductsProps> = ({
                 quality={100}
                 width={product.imageSize}
                 height={product.imageSize}
-                className="object-cover object-center w-52 h-52 dark:bg-gray-500 mt-2"
+                className="object-cover object-center w-52 h-52 dark:bg-gray-500 mt-2 mx-auto"
             />
             <p className="pl-3 pt-1 text-gray-800">
                 {product.productName}, {product.productCategory}
@@ -73,7 +73,7 @@ const ProductCard: React.FC<IProductsProps> = ({
                     </span>
                     <button
                         type="button"
-                        className="mb-6 ml-20 bg-mainPink-100 rounded-full pl-3 h-12 w-12 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                        className="mb-6 ml-20 lg:ml-22 xl:ml-28 bg-mainPink-100 rounded-full pl-3 h-12 w-12 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                         data-te-ripple-init
                         data-te-ripple-color="light"
                     >

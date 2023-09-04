@@ -55,7 +55,11 @@ export const productsData: IProduct[] = [
     productName: "System JO CLASSIC HYBRID",
     productCategory: "Lubricant",
     price: 103.03,
-    colors: ["black","red-400","blue-400"],
+    colors: [
+      { code: "black", name: "Black" },
+      { code: "red-500", name: "Red" },
+      { code: "blue-400", name: "Blue" },
+    ],
   },
   {
     productImage: "https://github.com/shadcn.png",
@@ -63,7 +67,11 @@ export const productsData: IProduct[] = [
     productName: "System JO CLASSIC HYBRID",
     productCategory: "Lubricant",
     price: 103.03,
-    colors: ["black","red-400","blue-400"],
+    colors: [
+      { code: "black", name: "Black" },
+      { code: "red-500", name: "Red" },
+      { code: "blue-400", name: "Blue" },
+    ],
   },
   {
     productImage: "https://github.com/shadcn.png",
@@ -71,6 +79,10 @@ export const productsData: IProduct[] = [
     productName: "System JO CLASSIC HYBRID",
     productCategory: "Lubricant",
     price: 103.03,
-    colors: ["black","red-400","blue-400"],
+    colors: [
+      { code: "black", name: "Black" },
+      { code: "red-500", name: "Red" },
+      { code: "blue-400", name: "Blue" },
+    ],
   },
 ]

@@ -14,9 +14,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle }) => {
                 </h3>
                 <div className="border-t border-red-400 w-1/6 my-3"></div>
             </div>
-            <p className="font-sans text-sm md:text-lg text-center">
-                {subtitle}
-            </p>
+            <p className="font-sans text-sm text-center">{subtitle}</p>
         </section>
     )
 }
