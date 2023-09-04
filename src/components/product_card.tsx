@@ -63,12 +63,12 @@ const ProductCard: React.FC<IProductsProps> = ({
                 {product.productName}, {product.productCategory}
             </p>
             <div className="py-2">
-                <div className="flex items-center space-x-4">
-                    <p className="pr-2 pl-1 dark:text-gray-800">Satisfyer</p>
+                <div className="flex mr-2 items space-x-2 items-center">
+                    <p className="pl-3 dark:text-gray-800">Satisfyer</p>
                     <Rating />
                 </div>
                 <div className="space-y-2 flex items-center pt-3 pb-1">
-                    <span className="text-base dark:text-gray-800 font-semibold pt-2">
+                    <span className="pl-3 text-base dark:text-gray-800 font-semibold pt-2">
                         ${product.price}
                     </span>
                     <button
