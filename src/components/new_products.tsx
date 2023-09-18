@@ -5,7 +5,7 @@ import Carousel from 'better-react-carousel'
 
 const NewProducts = () => {
     return (
-        <section className="max-w-4xl pl-4 pr-4 pt-4 pb-4 mx-auto">
+        <section className="max-w-4xl pl-4 pr-4 pt-4 pb-4 mx-auto hidden md:block">
             <SectionTitle title="New products" subtitle="" />
 
             <Carousel

@@ -6,21 +6,18 @@ import { IProduct } from './components/product_card'
 import { IconToyBrickMinusOutline } from './assets/icons/icon-list'
 export const highlightProducts: IHighlightProduct[] = [
   {
-    topic: 'Politics',
     date: '4th Aug',
     title: 'Autem sunt tempora mollitia magnam non voluptates',
     href: 'https://google.com',
     bg: 'bg-rose-300',
   },
   {
-    topic: 'Art',
     date: '4th Aug',
     title: 'Autem sunt tempora mollitia magnam non voluptates',
     href: 'https://google.com',
     bg: 'bg-fuchsia-300',
   },
   {
-    topic: 'Sport',
     date: '4th Aug',
     title: 'Autem sunt tempora mollitia magnam non voluptates',
     href: 'https://google.com',

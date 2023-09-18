@@ -3,7 +3,6 @@ import { useIsMobile } from '../hooks/hooks'
 import { highlightProducts } from '../mockedData'
 
 export interface IHighlightProduct {
-    topic: string
     date: string
     title: string
     href: string
@@ -37,13 +36,6 @@ const HeroMobile: React.FC<HeroProps> = ({ highlightProducts }) => {
                                         className={`absolute top-0 bottom-0 left-0 right-0 dark:via-transparent bg-${product.bg}`}
                                     ></div>
                                     <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                                        <a
-                                            rel="noopener noreferrer"
-                                            href="#"
-                                            className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline dark:text-gray-100 dark:bg-violet-400"
-                                        >
-                                            {product.topic}
-                                        </a>
                                         <div className="flex flex-col justify-start text-center dark:text-gray-100">
                                             <span className="text-3xl font-semibold leading-none tracking-wide">
                                                 {product.date.split(' ')[0]}
@@ -91,23 +83,6 @@ const HeroWeb: React.FC<HeroProps> = ({ highlightProducts }) => {
                                 }
                             ></div>
 
-                            <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                                <a
-                                    rel="noopener noreferrer"
-                                    href="#"
-                                    className="px-3 py-2 text-xs font-semibold tracking-wider uppercase hover:underline dark:text-gray-100 dark:bg-violet-400"
-                                >
-                                    {product.topic}
-                                </a>
-                                <div className="flex flex-col justify-start text-center dark:text-gray-100">
-                                    <span className="text-3xl font-semibold leading-none tracking-wide">
-                                        {product.date.split(' ')[0]}
-                                    </span>
-                                    <span className="leading-none uppercase">
-                                        {product.date.split(' ')[1]}
-                                    </span>
-                                </div>
-                            </div>
                             <h2 className="z-10 p-5">
                                 <a
                                     rel="noopener noreferrer"
